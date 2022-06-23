@@ -1,0 +1,8 @@
+0000000000000000000000000000000000000000 83a2ddf1f73a9cb82db91f1a296e5bc1d30d79a0 Sami <samiwood96@gmail.com> 1637368016 -0500	commit (initial): fucking init jesus
+83a2ddf1f73a9cb82db91f1a296e5bc1d30d79a0 9f20e25baf456279882237312f8b808a38842b79 Sami <samiwood96@gmail.com> 1644338381 -0500	commit: very close to seg with water need to fix the tile update stuff along with cleaning up the segmentation visually
+9f20e25baf456279882237312f8b808a38842b79 2352c3f235e469096c5bf1f0b5cd970e92164548 Sami <samiwood96@gmail.com> 1644346532 -0500	commit: pretty good
+2352c3f235e469096c5bf1f0b5cd970e92164548 e69a88d05cc5a75b8faec48e4facdf1ca68ca1fe Sami <samiwood96@gmail.com> 1644859327 -0500	commit: Version used for generation of first synthetic data set. Not perfect still has some tile data quality isseus and leaks memory. Needs several restarts to collect a full dataset.
+e69a88d05cc5a75b8faec48e4facdf1ca68ca1fe 80c70b9fb0c6241d1e5fc9861939f7041f4e25e5 Sami <samiwood96@gmail.com> 1644884362 -0500	commit: jk now its final for first round i hope...
+80c70b9fb0c6241d1e5fc9861939f7041f4e25e5 30cb45a46b17655384fc5370bfa5c8f9ae6a8ab8 Sami <samiwood96@gmail.com> 1654790423 -0400	commit: post defense CP
+30cb45a46b17655384fc5370bfa5c8f9ae6a8ab8 8d8eb56fb4861aa8ce32933943fceba8788d929c Sami <samiwood96@gmail.com> 1655999698 -0400	commit: trying to add everything needed to share and reproduce
+8d8eb56fb4861aa8ce32933943fceba8788d929c 6f9fcf271db886686e72d3f5329251e9b4675097 Sami <samiwood96@gmail.com> 1656004281 -0400	commit: added mapbox? maybe that will make it work when downloaded?
