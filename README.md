@@ -50,8 +50,52 @@ Note that the simulator and navigation solutions have only been tested on a Wind
 
 ## Using the simulator
 
+Configurations for running the simulator are set in the Unity Editor. A good working knowledge of Unity is helpful for getting the simulator up and running. For those who are entirely new to Unity I recommend completing the [introductory course by Brackeys](https://www.youtube.com/watch?v=IlKaB1etrik)
+
+For those who are more familiar with Unity or willing to dive in head first,  I provide a high-level overview of setting up and using the simulator/Unity. See the video below.
+
 ### Data Generation
 
+#### 1. Load the "SegImage" Scene
+
+To load the "SegImage" Scene, click on the project tab by default found in the lower left-hand corner. Under the assets folder, click Scenes. Clicking scenes should display all of the scenes for the project. Double click on the one that says seg image to open it. 
+
+![image](https://user-images.githubusercontent.com/24756984/176236106-f784864a-8771-45ae-b1fa-ae5a97105fb6.png)
+
+#### 2. Set the view to see the main and segmentation cameras
+
+To view the main camera, click the game tab at the top left. Under the game tab, click the dropdown next to the aspect ratio ie "free aspect", "16:9", etc. Select if available select 480x480 or add it by choosing the plus at the very bottom and then select 480x480.
+
+![image](https://user-images.githubusercontent.com/24756984/176240789-82930d4c-451a-4d48-b49e-c14ed8c62d0a.png)
+
+To view the segmentation camera, right-click on the "game tab" and select "add tab", and under "add tab", select "game". Note that if you can not find a tab, you can typically add it by right-clicking any existing tab and selecting "add tab" from the dropdown menu.
+
+![image](https://user-images.githubusercontent.com/24756984/176242006-762fe9a1-ebc3-4473-ab0a-4f25dde6c262.png)
+
+To view both cameras simultaneously, first drag and drop the newly created (currently selected) game tab to the right. The editor should show a split-screen. Next, repeat the above step to change the camera resolution to 480x480.  Under the game tab, click the dropdown next to the aspect ratio ie "free aspect", "16:9", etc. Select if available select 480x480 or add it by choosing the plus at the very bottom and then select 480x480.
+
+![image](https://user-images.githubusercontent.com/24756984/176242882-1f25a296-d0fb-4c07-ae9f-fd432bb1efe6.png)
+
+Finally in the rightmost game tab click the dropdown next to display 1 and select display 2. This should beging rendering both displays.
+
+![image](https://user-images.githubusercontent.com/24756984/176243261-29f6931f-0939-432a-88c4-49334c58bd5f.png)
+
+#### 4. Set paths and run config
+
+To run the data generator, first navigate to the autoCap object under the hierarchy menu.
+
+![image](https://user-images.githubusercontent.com/24756984/176243847-ba58672f-5c29-4927-b2e9-96993be30164.png)
+
+Under the inspector for this object found on the far right, select "Is train mode" and deselect all others. Under "data folder," provide a path to a folder to hold the data. The data folder MUST contain two sub folders, x and y.
+
+![image](https://user-images.githubusercontent.com/24756984/176244940-0e7029aa-dd16-4a0a-a839-57b6b3632285.png)
+
+At the top of the editor, click the play button. This should start running the data collection process. Data pairs will be saved at the specified location under the folders x and y.
+
+![image](https://user-images.githubusercontent.com/24756984/176246209-4408c514-dc8e-4d62-942d-1d321840f6e5.png)
+
+
+Note the simulator is flexible and with some tweaks to the code and other parameters, things like the distance between pictures, flood locations, water color, altitude, etc can be changed [See the video]. 
 
 ### Navigation simulation
 
