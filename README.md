@@ -95,7 +95,7 @@ At the top of the editor, click the play button. This should start running the d
 ![image](https://user-images.githubusercontent.com/24756984/176246209-4408c514-dc8e-4d62-942d-1d321840f6e5.png)
 
 
-Note the simulator is flexible and with some tweaks to the code and other parameters, things like the distance between pictures, flood locations, water color, altitude, etc can be changed [See the video] or the [AutoCapture script](https://github.com/memeQueenPaulaDeen/UnityFloodSimulator/blob/master/Assets/AutoCapture.cs)  
+Note the simulator is flexible and with some tweaks to the code and other parameters, things like the distance between pictures, flood locations, water color, altitude, etc can be changed [See the video] and the [AutoCapture script](https://github.com/memeQueenPaulaDeen/UnityFloodSimulator/blob/master/Assets/AutoCapture.cs)  
 
 ### Navigation simulation
 
