@@ -13,24 +13,25 @@ using DefaultNamespace;
 public class AutoCapture : MonoBehaviour
 {
     // Start is called before the first frame update
-    public Camera rgbCam;
-    public Camera segCam;
+    public Camera rgbCam; //Should be set to render to display one and show the sat imagery
+    public Camera segCam; //Should be set to render to display two and show the segmentaion masks
     public AbstractMap map;
-    public int camResWidth = 480;
+    public int camResWidth = 480; //camera screenshot capture is 480 x 480. IT is VERY IMPORTANT this number match with the display resolution in the unity editor 
     public int camResHeight = 480;
     
-    public int changePositionEveryXframes = 20;
-    public int strideRight = 50;
-    public int strideUp = 50;
+    public int changePositionEveryXframes = 20; //set how often the camera moves cant go too fast or mapbox cant keep up. Longer distance between pictures may need more time
+    public int strideRight = 50; //The distance the camera moves to the right per stride. Corresponds to ~ 137 pixels when 150 units above the terain
+    public int strideUp = 50; //The distance north the camera moves [UAV by default flys raster moving back and forth east to west slowly moving to the north]
 
-    public int rasterLengthRight = 20;
-    public int rasterLengthUp = 2;
+    //sets to fly a raster pattern 20 jumps east 1 jump north, 19 jumps west, 1 jump north. Repeated 20x
+    public int rasterLengthRight = 19; //set in the editor to collect a total of 400 images over a city make 19 + 1 jumps of length strideRight before moving up a distance of strideUp
+    public int rasterLengthUp = 20;// sets the number of jumps of lenght stride up made after a total of rasterLenghtRight jumps are made to the east or west
 
-    public String dataFolder;
-    public bool isTrainMode = true;
-    public bool doFullAutoTest;
-    public bool randomRotAug = false;
-    public bool manOverRideRaster = false;
+    public String dataFolder; //location to save the data
+    public bool isTrainMode = true; //when true fly raster patterns and collect data for training seg models (rasterLenghtRight+1)*rasterLenghtUp images collected over all cities in list att bottom of file 
+    public bool doFullAutoTest; //set to true when testing a navigation solution with paired python framework
+    public bool randomRotAug = false; //adds random rotaion to camera simulating distortion from pitch and roll with bod or no gimbal
+    public bool manOverRideRaster = false; //fly the uav with wasd
     
     public static bool fullAutoTest;
     
@@ -215,7 +216,7 @@ public class AutoCapture : MonoBehaviour
         }
     }
 
-    private List<Vector3> raster() //fly the raster patern
+    private List<Vector3> raster() //fly the raster patern. Can change this method to change the raster pattern if desired
     {
         List<Vector3> result = new List<Vector3>(rasterLengthUp*rasterLengthRight);
         Vector3 Delta;

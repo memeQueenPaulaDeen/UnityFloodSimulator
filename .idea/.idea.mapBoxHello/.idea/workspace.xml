@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="684fd605-0f55-4799-81d5-1d2312b3711a" name="Default Changelist" comment="" />
+    <list default="true" id="684fd605-0f55-4799-81d5-1d2312b3711a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.mapBoxHello/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.mapBoxHello/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AutoCapture.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AutoCapture.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -105,10 +108,10 @@
       <option value="$PROJECT_DIR$/Assets/simplePathFollow.cs" />
       <option value="$PROJECT_DIR$/Assets/TCPMessenger.cs" />
       <option value="$PROJECT_DIR$/Assets/sendMainCamToPython.cs" />
-      <option value="$PROJECT_DIR$/Assets/AutoCapture.cs" />
       <option value="$PROJECT_DIR$/Assets/Shaders/segMask2Icri.shader" />
       <option value="$PROJECT_DIR$/Assets/Shaders/segMask.shader" />
       <option value="$PROJECT_DIR$/Assets/ApplySegmentation.cs" />
+      <option value="$PROJECT_DIR$/Assets/AutoCapture.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1tfsJUXs7IxZjdJ6PGsBZR6oz85" />
@@ -192,7 +195,8 @@
       <workItem from="1654790389087" duration="11404000" />
       <workItem from="1655136012599" duration="7371000" />
       <workItem from="1656025916659" duration="342000" />
-      <workItem from="1656026288731" duration="19000" />
+      <workItem from="1656026288731" duration="1730000" />
+      <workItem from="1656518681690" duration="1195000" />
     </task>
     <task id="LOCAL-00001" summary="I hope this works">
       <created>1637366681789</created>
