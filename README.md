@@ -54,6 +54,9 @@ Configurations for running the simulator are set in the Unity Editor. A good wor
 
 For those who are more familiar with Unity or willing to dive in head first,  I provide a high-level overview of setting up and using the simulator/Unity. See the video below.
 
+![image](https://user-images.githubusercontent.com/24756984/178115675-3cd9f5ae-1fd3-4898-991e-4f4d3e660933.png)(https://www.youtube.com/watch?v=O8QVfZwQwEc)
+
+ 
 ### Data Generation
 
 #### 1. Load the "SegImage" Scene
