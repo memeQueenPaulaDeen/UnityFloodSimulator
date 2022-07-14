@@ -139,4 +139,54 @@ Next, Click the enable preview button directly above the general options for the
 
 ![image](https://user-images.githubusercontent.com/24756984/178858979-42c9d4d2-db22-41d1-827b-2ca3ad013f90.png)
 
+Now let's assume that we are interested in simulating a flood along the east bank of the Delaware River. There will be major steps. The first will be to determine the extent of the area of interest and to set the boundaries of the simulated environment accordingly. The second will be to create a representation of the flood. 
+
+
+#### 1. Set the bounds of the map
+
+
+In order to set the bounds of the map first let us assume we would like to include only the east bank of the river with an equal amount of area north and south of the USS New Jersey. 
+
+Under the General drop-down menu in the inspector for the map, set the extent options to "range around center." This will tell the simulator to populate a certain amount of unity tiles around the lat, long provided in the location field. Because we are only interested in the east bank, we can set the number of tiles to the west of the USS new jersey to 0 
+
+![image](https://user-images.githubusercontent.com/24756984/179054611-c9d9db3b-0fa4-42a2-aa70-29f41689f33a.png)
+
+Set the number of tiles north and south to 5. Set the number of tiles to the east to 8.
+
+![image](https://user-images.githubusercontent.com/24756984/179057057-c1dfafb3-f723-4209-956e-0390c34dd9e2.png)
+
+
+#### 2. Simulate the flood 
+
+The flood can be simulated as a plane. The plane represents a uniform rise in the water table around the river due to a flooding event. To create a plane of water, first, select the water4advanced object under the Game object hierarchy tab. Note that many water4advnaced(some number) objects are under the parent in the hierarchy. These child objects will obey some relative transform to the parent, so by moving the parent, all the child objects will also move with it. To get a clearer view of the flood water, click and drag up on the green arrow in the scene view.
+
+
+![MoveWater](https://user-images.githubusercontent.com/24756984/179059916-a3533650-d9c7-4004-8350-f47b9c0226ed.gif)
+
+There is an almost complete rectangle. Let's complete the rectangle by adding in 3 additional water objects. To do so, click on the far bottom left-hand corner of the water in the scene view. This should highlight a small square.
+
+
+![image](https://user-images.githubusercontent.com/24756984/179060701-08a7b0e7-7c4e-490a-aefe-937e605c8bdb.png)
+
+We can now duplicate this square and use it to fill in the whole above. To do so right-click the highlighted object in the hierarchy [it should become highlighted when you select it in the scene view]. In the popup menu, select duplicate.
+
+![image](https://user-images.githubusercontent.com/24756984/179061262-7720f535-e8c1-4523-92fe-f24ee7619029.png)
+
+To fill the whole use the arrows on the duplicated object to drag it into place. Note that this can be done by changing the value in the transform field to 300, 0, 400. Each of the tiles should be at a position that is a multiple of 100. Set the transform exactly after moving the tile roughly into position with the arrows.
+
+
+![fill hole 1](https://user-images.githubusercontent.com/24756984/179062617-27adb1d8-39e2-4d72-906b-9e500d30a671.gif)
+
+Repeat the process to fill in the remaining two holes. 
+
+![fill hole 2 and 3](https://user-images.githubusercontent.com/24756984/179068552-bdafedf9-ed91-4592-a79b-e96d1651fecb.gif)
+
+The last step is to move the water into place along the land. Select the parent water object in the object hierarchy and use the arrows to position the water over the land. The green arrow can be used to control the severity of the flood by changing the height of the water object.
+
+![final flood placement](https://user-images.githubusercontent.com/24756984/179068681-ed72182e-3ebc-4962-b6c4-611d8136d295.gif)
+
+Switching back to the game view and adjusting the position of the main camera can be used to preview the areal view of the simulated environment.
+
+
+![phillyPreview](https://user-images.githubusercontent.com/24756984/179070559-278b4885-4daf-491e-9209-6ff66fe0ca1c.gif)
 
