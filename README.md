@@ -102,4 +102,41 @@ Note the simulator is flexible and with some tweaks to the code and other parame
 
 ### Navigation simulation
 
+In addition to creating custom segmentation data sets, the unity simulator can also create realistic hypothetical flooded environments. Navigation solutions can be tested in these hypothetical environments. The demo video in the overview section shows a navigation solution implemented in python. The [solution](https://github.com/memeQueenPaulaDeen/DeepLearnFinalProject) uses a UAV first to observe the flooded environment and then directs a ground vehicle along a safe and efficient path.
+
+The Unity Flood Simulator can create a navigation environment anywhere in the world. Upon downloading the simulator, there are already three flooded environments included. They can be found in the scenes folder, labeled as: "Test Scenario Norfolk", "Test Scenario Naha", and "Test Scenario Jacksonville". Norfolk is shown below.
+
+![image](https://user-images.githubusercontent.com/24756984/178850861-062ff8c9-4758-4139-b9f3-bc0a5e3de43b.png)
+
+The scenes provided are an excellent starting point for creating a new flooded environment. The process is described in the section below at a high level. The video below gives a more detailed walkthrough of creating new envirments.
+
 #### Creating the navigation environment
+
+First, we will select a location of interest on [mapbox](https://api.mapbox.com/styles/v1/mapbox/satellite-streets-v11.html?title=true&access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4M29iazA2Z2gycXA4N2pmbDZmangifQ.-g_vE53SD2WrJ6tFX7QHmA#15.31/39.938986/-75.130776). For the purpose of this example, we will choose this spot along the Delaware river above the USS New Jersey in Philadelphia located at 39.93925174, -75.13297759. Note that Mapbox and Google maps may not align perfectly, so it is better to be consistent and use Mapbox gps coordinate system when selecting an area of interest for the simulator.
+
+![image](https://user-images.githubusercontent.com/24756984/178855657-e5965f8a-03e7-4c8d-9ac5-78f437027c4e.png)
+
+
+To create a new flooded environment, start by duplicating the "Test Scenario Norfolk" scene by clicking it and pressing control-d on the keyboard. The  "Test Scenario Norfolk" scene can be found under the project tab in the "Scenes" folder. 
+
+
+![duplicateNorfolk](https://user-images.githubusercontent.com/24756984/178852922-95d6503f-3667-4130-ae2f-ea41b4163e13.gif)
+
+Next, change the name of the scene to something like "Philly example" by right-clicking the duplicated object "Test Scenario Norfolk 1" and selecting rename in the popup menu.
+
+![image](https://user-images.githubusercontent.com/24756984/178855832-985e0415-8390-4ee7-9c2f-5aa815b06b01.png)
+
+Next, double-click on the Philly example scene to load it. To tell the simulator where to load geographically, click the map game object under the hierarchy. This should open the map object inspector on the far right side.
+
+![image](https://user-images.githubusercontent.com/24756984/178857321-f5f54524-f7ee-4813-ab65-17455f12350e.png)
+
+Expand the general drop-down menu by clicking the arrow next to general in the inspector. Edit, the location field to match the GPS coordinates that you would like to simulate. For this example, we will use the coordinates of the USS New Jersey 39.93925174, -75.13297759
+
+![image](https://user-images.githubusercontent.com/24756984/178857792-c60165b0-aa05-45e8-8330-21af9fd4447d.png)
+
+Next, Click the enable preview button directly above the general options for the map object under the inspector. To view the preview of the new environment, click the Scene tab in the upper lefthand corner.
+
+
+![image](https://user-images.githubusercontent.com/24756984/178858979-42c9d4d2-db22-41d1-827b-2ca3ad013f90.png)
+
+
