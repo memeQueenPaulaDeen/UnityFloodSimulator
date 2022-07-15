@@ -1074,6 +1074,7 @@ MonoBehaviour:
   isTrainMode: 0
   doFullAutoTest: 1
   randomRotAug: 0
+  manOverRideRaster: 0
 --- !u!4 &265343963
 Transform:
   m_ObjectHideFlags: 0
@@ -10570,7 +10571,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1831422223}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a08ab1f43a15d7048a464f49a9e7007e, type: 3}
+  m_Script: {fileID: 11500000, guid: 7c6fef0bf9f7cb1458ad060e4a3a6f31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 1831422227}
@@ -11279,6 +11280,7 @@ MonoBehaviour:
   updateEveryNFrames: 10
   camResWidth: 480
   camResHeight: 480
+  sendOnKeyPress: 0
 --- !u!21 &1928449151
 Material:
   serializedVersion: 6

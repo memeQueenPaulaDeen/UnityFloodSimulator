@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="684fd605-0f55-4799-81d5-1d2312b3711a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.mapBoxHello/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.mapBoxHello/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AutoCapture.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AutoCapture.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Standard Assets/Environment/Water/Water4/Materials/Water4Advanced.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Environment/Water/Water4/Materials/Water4Advanced.mat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +196,8 @@
       <workItem from="1655136012599" duration="7371000" />
       <workItem from="1656025916659" duration="342000" />
       <workItem from="1656026288731" duration="1730000" />
-      <workItem from="1656518681690" duration="1195000" />
+      <workItem from="1656518681690" duration="1818000" />
+      <workItem from="1657921109030" duration="70000" />
     </task>
     <task id="LOCAL-00001" summary="I hope this works">
       <created>1637366681789</created>
@@ -261,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654790423854</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="added some comments to AutoCapture.cs">
+      <created>1656519907143</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1656519907143</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,7 +317,8 @@
     <MESSAGE value="jk now its final for first round i hope..." />
     <MESSAGE value="post defense CP" />
     <MESSAGE value="trying to add everything needed to share and reproduce" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying to add everything needed to share and reproduce" />
+    <MESSAGE value="added some comments to AutoCapture.cs" />
+    <option name="LAST_COMMIT_MESSAGE" value="added some comments to AutoCapture.cs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
