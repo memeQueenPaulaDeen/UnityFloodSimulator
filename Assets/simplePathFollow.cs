@@ -10,7 +10,7 @@ public class simplePathFollow : MonoBehaviour
 {
     public Transform playerTransform;
     public Camera uavCamera;
-    public int updateposEverNframes = 10;
+    public int updateposEverNframes = 1;
     
     private int frames;
 

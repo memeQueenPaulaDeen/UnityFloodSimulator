@@ -340,7 +340,7 @@ public class AutoCapture : MonoBehaviour
     private static List<Tuple<string, Vector2d>> locations = new List<Tuple<string, Vector2d>>
     {
         
-        new Tuple<string, Vector2d>("Tulsa",new Vector2d(36.119803,-95.918574)),
+        //new Tuple<string, Vector2d>("Tulsa",new Vector2d(36.119803,-95.918574)),
         new Tuple<string, Vector2d>("Houston", new Vector2d(29.7650639, -95.6377411)),
         new Tuple<string, Vector2d>("NewOrleans", new Vector2d(29.9922571,-90.210429)),
         new Tuple<string, Vector2d>("Miami", new Vector2d(25.7194804,-80.2902936)),
