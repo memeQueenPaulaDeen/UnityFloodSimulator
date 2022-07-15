@@ -98,7 +98,9 @@ At the top of the editor, click the play button. This should start running the d
 ![image](https://user-images.githubusercontent.com/24756984/176246209-4408c514-dc8e-4d62-942d-1d321840f6e5.png)
 
 
-Note the simulator is flexible and with some tweaks to the code and other parameters, things like the distance between pictures, flood locations, water color, altitude, etc can be changed [See the video] and the [AutoCapture script](https://github.com/memeQueenPaulaDeen/UnityFloodSimulator/blob/master/Assets/AutoCapture.cs)  
+Note the simulator is flexible and with some tweaks to the code and other parameters, things like the distance between pictures, flood locations, water color, altitude, etc can be changed [See the video] and the [AutoCapture script](https://github.com/memeQueenPaulaDeen/UnityFloodSimulator/blob/master/Assets/AutoCapture.cs)
+
+In some cases the RGB values at the boundaries beteween classes may become blurred. This can cause issues when encoding the data into a onehot or similar encoding. I created [custom keras loaders](https://github.com/memeQueenPaulaDeen/DeepLearnFinalProject/blob/master/Generators.py) that can automatically clean the data, or alternativly, a [script](https://github.com/memeQueenPaulaDeen/DeepLearnFinalProject/blob/master/DataCleaning.py) that can be used to clean the masks after the dataset has been created.
 
 ### Navigation simulation
 
