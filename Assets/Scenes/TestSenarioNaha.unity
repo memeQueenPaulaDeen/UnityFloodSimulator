@@ -9698,7 +9698,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 1831422227}
   uavCamera: {fileID: 1913108033}
-  updateposEverNframes: 2
+  updateposEverNframes: 1
 --- !u!21 &1842898976
 Material:
   serializedVersion: 6

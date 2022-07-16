@@ -11146,7 +11146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 1831422227}
   uavCamera: {fileID: 1913108033}
-  updateposEverNframes: 2
+  updateposEverNframes: 1
 --- !u!1001 &1839013890
 PrefabInstance:
   m_ObjectHideFlags: 0
